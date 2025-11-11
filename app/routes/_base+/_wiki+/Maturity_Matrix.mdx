@@ -1,6 +1,6 @@
 ---
 title: Maturity Matrix
-description: While developing your bot, there many, many different implementations that different systems can use. Some are more efficient than others, comparing your progress to other such implementations can be useful to gauge where you are and how far you have to go. It is important to remember, that Screeps is a sandbox however, if something works for you and your happy with it, use it. However, if you are looking to improve a system, or just wondering how your implementation can compare then you may find this useful. This article is structured roughly after a Maturity Matrix.
+description: While developing your bot, there many, many different implementations that different systems can use. Some are more efficient than others, comparing your progress to other such implementations can be useful to gauge where you are and how far you have to go. It is important to remember, that Screeps is a sandbox however, if something works for you and you're happy with it, use it. However, if you are looking to improve a system, or just wondering how your implementation can compare then you may find this useful. This article is structured roughly after a Maturity Matrix.
 categories:
   - Strategy
 ---
@@ -17,7 +17,7 @@ If you wish to view Screeps as a puzzle based game where your progression is wor
 
 ### Important concepts
 
-The are several concepts in this article that are repeated, instead of explaining each time, this section will attempt a brief explanation with supporting links when possible.
+There are several concepts in this article that are repeated, instead of explaining each time, this section will attempt a brief explanation with supporting links when possible.
 
 #### Hard-Coding
 
@@ -113,7 +113,7 @@ By far the most manual but using the most 'capably advanced' targeting system kn
 
 #### First-Found/Indexed Targeting
 
-Introduced in Screep's tutorial, first found/ first index mainly looks for hostile creeps in a room, then selects the 'first element' of the provided array or closest by range. This works well to target threats that are closest / as they come, but does not consider a vareity of factors such as if the opposing creep can actually do harm, or if shooting it will result in no damage due to healing.
+Introduced in Screep's tutorial, first found/ first index mainly looks for hostile creeps in a room, then selects the 'first element' of the provided array or closest by range. This works well to target threats that are closest / as they come, but does not consider a variety of factors such as if the opposing creep can actually do harm, or if shooting it will result in no damage due to healing.
 
 #### Highest Priority / Threat filtering
 
@@ -243,7 +243,7 @@ TTK or 'time to kill' is a determined of how fast any given value can 'win' or k
 A user can choose positions/targets for creeps to use either by hardcoding or by assigning in memory/flag states. This is very precise but very manual and user attention dependent.
 
 **Automatic positioning**
-A user can use a variety of criteria t0 automatically position their defensive creeps. Normally this is done via rampart defense where a user will look for positions to assign a creep to defend based on the location's safety (ramparted/not ramparted) and the proximity to aggressors (enemy creeps). Then they can either score these positions as 'best to worse' and choose one, or simply assign a position as it is open, then redact it from further consideration for other defensive creeps as to not overlap.
+A user can use a variety of criteria to automatically position their defensive creeps. Normally this is done via rampart defense where a user will look for positions to assign a creep to defend based on the location's safety (ramparted/not ramparted) and the proximity to aggressors (enemy creeps). Then they can either score these positions as 'best to worse' and choose one, or simply assign a position as it is open, then redact it from further consideration for other defensive creeps as to not overlap.
 
 ### Room Offense (Generalized)
 
@@ -259,7 +259,7 @@ Some what more automated system, instead of hard-coding values the user can have
 
 #### Automatic Target scoring
 
-It is possible to fully automate attacking decisions in a variety of thresholds. Some use 'aggression' or 'diplomacy' balancing, where nearby rooms, active creep(s) in rooms, entering/attacking creeps and other factors that add to a count. Once a threashold is reached, then active counter-attacking begins. Its of course, also possible to just consider every enemy user as hostile and attack-on-sight. A user should still balance how/when they attack due to CPU and energy constraints,
+It is possible to fully automate attacking decisions in a variety of thresholds. Some use 'aggression' or 'diplomacy' balancing, where nearby rooms, active creep(s) in rooms, entering/attacking creeps and other factors that add to a count. Once a threshold is reached, then active counter-attacking begins. Its of course, also possible to just consider every enemy user as hostile and attack-on-sight. A user should still balance how/when they attack due to CPU and energy constraints,
 
 ## Creep Specific Systems
 
@@ -368,7 +368,7 @@ Beyond always executing and looking for every structure, making a list or librar
 
 #### Tower based repairing
 
-Debatably tower repairing allows for a reduction in CPU usage due to their agility to repair anything in a given room however, this is at the cost of more energy. While an improvement for some, it can be considered a determent to others.
+Debatably tower repairing allows for a reduction in CPU usage due to their ability to repair anything in a given room however, this is at the cost of more energy. While an improvement for some, it can be considered a determent to others.
 
 #### Opportunity based repairs
 
@@ -388,7 +388,7 @@ The by far easiest method for scouting, 'pick an exit / room from this list, and
 
 #### Progressive / Area / Timed Scout movement
 
-Instead of randomly moving, it is quite possible to define an 'area of influence' that creeps must maintain a watch/vision over occasinally. One way this can be done is by a floodfill of rooms from a core room, to determine how many interconnected rooms are 'in range' of the creeps abilities to get to. Then, maintaining this list / information to send creeps out to specific rooms on-order when vision has not been seen in a while, or on demand due to stresses or planners require.
+Instead of randomly moving, it is quite possible to define an 'area of influence' that creeps must maintain a watch/vision over occasionally. One way this can be done is by a floodfill of rooms from a core room, to determine how many interconnected rooms are 'in range' of the creeps abilities to get to. Then, maintaining this list / information to send creeps out to specific rooms on-order when vision has not been seen in a while, or on demand due to stresses or planners require.
 
 ### Creep Movement (Pathfinding)
 
@@ -604,7 +604,7 @@ Multi-Room management refers to a system or systems that are responsible for tak
 
 #### Hard coded
 
-Simply splitting off spawns / other calls into different rooms is generally most people's first step. Hard coding in general, however is not a great pratice.
+Simply splitting off spawns / other calls into different rooms is generally most people's first step. Hard coding in general, however is not a great practice.
 
 #### Looping Architecture
 
